@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es5",
+    "module": "esNext",
+    "lib": [
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2018",
+      "dom"
+    ],
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "declarationDir": ".temp/dist/types",
+    "outDir": ".temp/dist",
+    "jsx": "react",
+    "noImplicitAny": false,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "strictPropertyInitialization": false,
+    "allowJs": true,
+    "checkJs": false,
+    "rootDir": "./src",
+    "isolatedModules": false
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./src/test",
+    "./src/stories"
+  ]
+}
