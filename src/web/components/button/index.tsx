@@ -1,8 +1,6 @@
 import React, { FC } from 'react';
-import { Button as RawButton } from 'react-weui';
 import 'weui';
-import 'react-weui/build/packages/react-weui.css';
-import './index.less';
+import './index.css';
 
 interface IProps {
   /**
@@ -37,6 +35,8 @@ interface IProps {
   events: {
     [key: string]: (...args: any[]) => any
   },
+  className?: string;
+  id: string;
 }
 
 const Button: FC<IProps> = ({
@@ -47,20 +47,23 @@ const Button: FC<IProps> = ({
   disabled = false,
   plain = false,
   events,
+  className,
+  id,
   ...props
 }) => {
   return (
-    <RawButton
-      type={type}
-      size={size === 'mini' ? 'small' : 'normal'}
+    <button
+      id={id}
+      className={`weui-btn weui-btn_${type} ${
+        size !== 'default' ? `weui-btn_${size}` : ''
+      } ${className}`}
       disabled={disabled}
-      plain={plain}
       onClick={events.customevent}
       {...props}
     >
       {loading && <i className="weui-loading" />}
       {text}
-    </RawButton>
+    </button>
   );
 };
 
