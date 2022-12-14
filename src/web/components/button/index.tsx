@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import 'weui';
 import './index.css';
 
 interface IProps {

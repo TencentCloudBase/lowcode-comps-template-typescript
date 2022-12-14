@@ -21,8 +21,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.1",
     "prop-types": "^15.7.2",
-    "kbone-api": "^0.2.1",
-    "weui": "^2"
+    "kbone-api": "^0.2.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^6.1.12",
