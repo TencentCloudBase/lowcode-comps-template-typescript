@@ -1,5 +1,6 @@
-import * as kboneAPI from 'kbone-api';
-
+// @todo
+// 开发者可实现自定义的 Toast
+// 这里使用 alert 来演示
 export default function showToast({ data }) {
-  kboneAPI.showToast(data);
+  alert(data?.title);
 }
